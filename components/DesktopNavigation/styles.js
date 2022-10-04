@@ -30,6 +30,8 @@ export const NavLink = styled.a`
   &:visited {
     color: #7a7a7a;
   }
+
+  ${({ open }) => open && 'color: black !important;'}
 `;
 
 export const NavAnchor = styled.a`

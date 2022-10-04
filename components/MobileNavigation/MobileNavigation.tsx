@@ -9,23 +9,22 @@ import {
 } from './styles';
 import Link from 'next/link';
 
-const Navigation = () => {
+const Navigation = ({ route }) => {
   const [menuStatus, toggleMenu] = useState(false);
-
   return (
     <>
       <NavigationOptions open={menuStatus}>
         <Link href='/about' passHref>
-          <NavLink open={menuStatus}>About</NavLink>
+          <NavLink open={route === 'about'}>About</NavLink>
         </Link>
         <Link href='/land' passHref>
-          <NavLink open={menuStatus}>Land</NavLink>
+          <NavLink open={route === 'land'}>Land</NavLink>
         </Link>
         <Link href='/ocean' passHref>
-          <NavLink open={menuStatus}>Ocean</NavLink>
+          <NavLink open={route === 'ocean'}>Ocean</NavLink>
         </Link>
         <Link href='/city' passHref>
-          <NavLink open={menuStatus}>City</NavLink>
+          <NavLink open={route === 'city'}>City</NavLink>
         </Link>
         <StyledNavAnchor
           href='mailto:enquiries@sarahanneartist.com'

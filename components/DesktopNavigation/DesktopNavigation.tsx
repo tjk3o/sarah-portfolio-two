@@ -4,20 +4,29 @@ import 'font-awesome/css/font-awesome.css';
 import { NavLink, NavigationContainer, NavAnchor } from './styles';
 import Link from 'next/link';
 
-const Navigation = () => (
+const Navigation = ({ route }) => (
   <>
     <NavigationContainer>
       <Link href='/about'>
-        <NavLink href='/about'> About me</NavLink>
+        <NavLink open={route === 'about'} href='/about'>
+          {' '}
+          About me
+        </NavLink>
       </Link>
       <Link href='/land'>
-        <NavLink href='/land'>Land</NavLink>
+        <NavLink open={route === 'land'} href='/land'>
+          Land
+        </NavLink>
       </Link>
       <Link href='/city'>
-        <NavLink href='/city'>City</NavLink>
+        <NavLink open={route === 'city'} href='/city'>
+          City
+        </NavLink>
       </Link>
       <Link href='/ocean'>
-        <NavLink href='/ocean'>Ocean</NavLink>
+        <NavLink open={route === 'ocean'} href='/ocean'>
+          Ocean
+        </NavLink>
       </Link>
       <NavAnchor
         href='mailto:enquiries@sarahanneartist.com'

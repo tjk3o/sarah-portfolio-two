@@ -25,6 +25,7 @@ export const NavLink = styled.a`
   width: 100%;
   text-align: center;
   line-height: 40px;
+  ${({ open }) => open && 'color: white;'};
 `;
 
 export const NavButton = styled.button`

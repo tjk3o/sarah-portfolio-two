@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 export default function AboutPage() {
   return (
-    <Layout>
+    <Layout route='about'>
       <Head>
         <title>Sarah Anne Art | About</title>
         <meta name='description' content='A little bit about me'></meta>

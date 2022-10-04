@@ -4,13 +4,13 @@ import MobileNavigation from '../MobileNavigation/MobileNavigation';
 import DesktopNavigation from '../DesktopNavigation/DesktopNavigation';
 import { MainContainer } from './styles';
 
-export default function Layout({ children }) {
+export default function Layout({ route, children }) {
   return (
     <>
-      <MobileNavigation />
+      <MobileNavigation route={route} />
       <Header siteTitle='SARAH ANNE' />
       <MainContainer>
-        <DesktopNavigation />
+        <DesktopNavigation route={route} />
         {children}
         <Footer />
       </MainContainer>

@@ -5,7 +5,7 @@ import Head from 'next/head';
 
 export default function CategoryPage({ paintingsData }) {
   return (
-    <Layout>
+    <Layout route='land'>
       <Head>
         <title>Sarah Anne Art | Land</title>
         <meta name='description' content='Paintings of the land'></meta>
