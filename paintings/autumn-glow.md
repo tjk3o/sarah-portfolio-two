@@ -1,6 +1,6 @@
 ---
 title: 'Autumn Glow'
-date: '2022-03-29'
+date: '2022-04-02'
 image: /images/autumn_glow/autumn_glow.jpg
 image_close_1: /images/autumn_glow/autumn_glow_close_1.jpg
 image_close_2: /images/autumn_glow/autumn_glow_close_3.jpg

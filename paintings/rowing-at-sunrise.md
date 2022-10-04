@@ -1,6 +1,6 @@
 ---
 title: 'Rowing at Sunrise'
-date: '2022-03-30'
+date: '2022-04-01'
 image: /images/rowing_at_sunrise/rowing_at_sunrise.jpg
 image_close_1: /images/rowing_at_sunrise/rowing_at_sunrise_close_1.jpg
 image_close_2: /images/rowing_at_sunrise/rowing_at_sunrise_close_3.jpg

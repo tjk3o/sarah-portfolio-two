@@ -13,6 +13,10 @@ export const Category = ({ paintingsData, category }) => {
     city: 'City',
   };
 
+  paintingsData.sort(function (a, b) {
+    return new Date(b.date) - new Date(a.date);
+  });
+
   return (
     <>
       {category && (
