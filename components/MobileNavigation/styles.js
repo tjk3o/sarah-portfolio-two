@@ -10,7 +10,7 @@ export const NavigationOptions = styled.nav`
   height: 280px;
   width: 100%;
   transition: margin-top 200ms ease-in-out;
-  ${(props) => (props.open ? 'margin-top: 0px;' : 'margin-top: -280px')}
+  ${({ open }) => (open ? 'margin-top: 0px;' : 'margin-top: -280px')};
 `;
 
 export const NavLink = styled.a`
