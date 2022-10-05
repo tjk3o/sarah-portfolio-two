@@ -9,7 +9,23 @@ import {
   DetailsParagraph,
 } from './styles';
 
-const PaintingDetail = ({ paintingData }) => (
+export type paintingData = {
+  id?: string;
+  title: string;
+  date: string;
+  image: string;
+  image_close_1: string;
+  image_close_2: string;
+  image_close_3: string;
+  category: string;
+  description: string;
+  landscape: boolean;
+  portrait: boolean;
+  main_image_width: number;
+  main_image_height: number;
+};
+
+const PaintingDetail = ({ paintingData }: { paintingData }) => (
   <DetailsContainer
     className={Boolean(paintingData.landscape) ? 'landscape' : 'unset'}
   >

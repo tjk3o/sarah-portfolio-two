@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import mediaQueries from '../../theme';
+import { mediaQueries, colors } from '../../theme';
 
 export const DetailsContainer = styled.div`
   width: 100%;
@@ -44,28 +44,28 @@ export const DetailsContainer = styled.div`
 export const MainImageContainer = styled.div`
   position: relative;
   grid-area: mainImage;
-  background: #7a7a7a;
+  background: ${colors.grey};
   width: 100%;
 `;
 
 export const SecondImageContainer = styled.div`
   position: relative;
   grid-area: secondImage;
-  background: #7a7a7a;
+  background: ${colors.grey};
   width: 100%;
 `;
 
 export const ThirdImageContainer = styled.div`
   position: relative;
   grid-area: thirdImage;
-  background: #7a7a7a;
+  background: ${colors.grey};
   width: 100%;
 `;
 
 export const FourthImageContainer = styled.div`
   position: relative;
   grid-area: fourthImage;
-  background: #7a7a7a;
+  background: ${colors.grey};
   width: 100%;
 `;
 
@@ -79,11 +79,11 @@ export const DetailsHeading = styled.h2`
 `;
 
 export const DetailsParagraph = styled.p`
-  color: #7a7a7a;
+  color: ${colors.grey};
   font-size: 16px;
   line-height: 25px;
   margin: 0;
   a {
-    color: black;
+    color: ${colors.black};
   }
 `;

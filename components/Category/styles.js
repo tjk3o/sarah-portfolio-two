@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import mediaQueries from '../../theme';
+import { mediaQueries, colors } from '../../theme';
 
 export const CategoryHeading = styled.h1`
   font-size: 14px;
-  color: rgb(122, 122, 122);
+  color: ${colors.grey};
   width: 200px;
   line-height: 40px;
 
@@ -43,5 +43,5 @@ export const CategoryLink = styled.a`
 `;
 
 export const CategoryImage = styled(Image)`
-  background: #7a7a7a;
+  background: ${colors.grey};
 `;

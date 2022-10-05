@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediaQueries } from '../../theme';
+import { mediaQueries, colors } from '../../theme';
 
 export const NavigationContainer = styled.nav`
   display: none;
@@ -20,23 +20,23 @@ export const NavLink = styled.a`
   line-height: 26px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #7a7a7a;
+  color: ${colors.grey};
   font-size: 13px;
   transition: all 0.2s ease-out;
   &:hover {
-    color: #9d9da2;
+    color: ${colors.grey};
     transform: scale(1.02);
   }
   &:visited {
-    color: #7a7a7a;
+    color: ${colors.grey};
   }
 
-  ${({ open }) => open && 'color: black !important;'}
+  ${({ open }) => open && `color: ${colors.black} !important;`}
 `;
 
 export const NavAnchor = styled.a`
   &:hover {
-    color: #9d9da2;
+    color: ${colors.grey};
     transform: scale(1.02);
   }
 `;

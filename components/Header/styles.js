@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import { colors } from '../../theme';
 
 export const HeaderContainer = styled.header`
-  background-color: white;
+  background-color: ${colors.white};
 `;
 export const HeaderText = styled.h1`
-  color: black;
+  color: ${colors.black};
   margin-left: 5px;
   text-transform: uppercase;
   font-size: 26px;
@@ -17,9 +18,9 @@ export const HeaderText = styled.h1`
 
 export const HeaderLink = styled.a`
   text-decoration: none;
-  color: black;
+  color: ${colors.black};
   transition: all 0.2s ease-out;
   &:hover {
-    color: #9d9da2;
+    color: ${colors.grey};
   }
 `;

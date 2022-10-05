@@ -1,10 +1,11 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
+import Link from 'next/link';
 import 'font-awesome/css/font-awesome.css';
 import { NavLink, NavigationContainer, NavAnchor } from './styles';
-import Link from 'next/link';
+import { colors } from '../../theme';
 
-const Navigation = ({ route }) => (
+const Navigation = ({ route }: { route: string }) => (
   <>
     <NavigationContainer>
       <Link href='/about'>
@@ -39,7 +40,7 @@ const Navigation = ({ route }) => (
         <FontAwesome
           name='envelope'
           style={{
-            color: '#7a7a7a',
+            color: colors.grey,
             textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)',
             lineHeight: '26px',
           }}
@@ -55,7 +56,7 @@ const Navigation = ({ route }) => (
         <FontAwesome
           name='instagram'
           style={{
-            color: '#7a7a7a',
+            color: colors.grey,
             textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)',
             lineHeight: '26px',
           }}

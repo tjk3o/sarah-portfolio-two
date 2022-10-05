@@ -63,4 +63,8 @@ export const mediaQueries = Object.entries(breakpoints).reduce(
   {}
 );
 
-export default mediaQueries;
+export const colors = {
+  black: '#000000',
+  white: '#FFFFFF',
+  grey: '#7a7a7a',
+};

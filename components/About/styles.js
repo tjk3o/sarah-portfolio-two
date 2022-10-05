@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import mediaQueries from '../../theme';
+import { mediaQueries, colors } from '../../theme';
 
 export const AboutContainer = styled.div`
   width: 100%;
@@ -23,7 +23,7 @@ export const AboutContainer = styled.div`
 export const AboutMainImage = styled.div`
   position relative;
   grid-area: mainImage;
-  background: #7a7a7a;
+  background: ${colors.grey};
   width: 100%;
   height: 300px;
 
@@ -42,13 +42,13 @@ export const AboutText = styled.div`
 `;
 
 export const StyledH1 = styled.h1`
-  color: black;
+  color: ${colors.black};
   font-size: 30px;
   margin-bottom: 60px;
 `;
 
 export const StyledParagraph = styled.p`
-  color: #7a7a7a;
+  color: ${colors.grey};
 `;
 
 export const Signature = styled.div`

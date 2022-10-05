@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { mediaQueries } from '../../theme';
+import { mediaQueries, colors } from '../../theme';
 
 export const MainContainer = styled.div`
-  background-color: white;
+  background-color: ${colors.white};
   width: calc(100% - 10px);
   margin: 5px;
   display: flex;

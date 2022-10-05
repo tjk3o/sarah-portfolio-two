@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
-import { FooterContainer, Dot, LineBreak } from './styles';
+import { FooterContainer, Dot, LineBreak, FooterLink } from './styles';
 
 const Footer = () => (
   <FooterContainer>
@@ -8,14 +8,13 @@ const Footer = () => (
     <Dot>&nbsp; • &nbsp;</Dot>
     <LineBreak />
     Built by{' '}
-    <a
-      style={{ color: '#7a7a7a' }}
+    <FooterLink
       href='http://www.tomkeogh.co.uk/'
       target='_blank'
       rel='noopener noreferrer'
     >
       tjk3o
-    </a>
+    </FooterLink>
   </FooterContainer>
 );
 

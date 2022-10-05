@@ -8,8 +8,9 @@ import {
   StyledNavAnchor,
 } from './styles';
 import Link from 'next/link';
+import { colors } from '../../theme';
 
-const Navigation = ({ route }) => {
+const Navigation = ({ route }: { route: string }) => {
   const [menuStatus, toggleMenu] = useState(false);
   return (
     <>
@@ -36,7 +37,7 @@ const Navigation = ({ route }) => {
           <FontAwesome
             name='envelope'
             style={{
-              color: '#7a7a7a',
+              color: colors.grey,
               textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)',
               lineHeight: '40px',
             }}
@@ -52,7 +53,7 @@ const Navigation = ({ route }) => {
           <FontAwesome
             name='instagram'
             style={{
-              color: '#7a7a7a',
+              color: colors.grey,
               textShadow: '0 1px 0 rgba(0, 0, 0, 0.1)',
               lineHeight: '40px',
             }}
