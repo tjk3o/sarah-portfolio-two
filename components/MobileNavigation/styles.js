@@ -9,8 +9,9 @@ export const NavigationOptions = styled.nav`
   background-color: ${colors.black};
   height: 280px;
   width: 100%;
+  margin-top: -280px;
   transition: margin-top 200ms ease-in-out;
-  ${({ open }) => (open ? 'margin-top: 0px;' : 'margin-top: -280px')};
+  ${({ open }) => open && 'margin-top: 0px;'};
 `;
 
 export const NavLink = styled.a`
