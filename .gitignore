@@ -6,4 +6,4 @@ package-lock.json
 .next/
 
 # Image files
-public/images/
+# public/images/
