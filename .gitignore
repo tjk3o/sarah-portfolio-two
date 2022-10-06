@@ -7,3 +7,5 @@ package-lock.json
 
 # Image files
 # public/images/
+
+.DS_Store
