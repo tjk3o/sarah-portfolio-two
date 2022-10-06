@@ -44,6 +44,7 @@ export const NavButton = styled.button`
   padding-top: 15px;
   border: none;
   background-color: ${colors.white};
+
   &:focus {
     outline: grey;
   }
@@ -55,6 +56,7 @@ export const NavButton = styled.button`
 
 export const StyledNavAnchor = styled.a`
   width: 100%;
+  height: 40px;
   text-align: center;
 
   &:last-child {

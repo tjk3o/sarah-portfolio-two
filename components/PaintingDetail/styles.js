@@ -38,6 +38,14 @@ export const DetailsContainer = styled.div`
       'description description description'
       'secondImage thirdImage fourthImage';
   }
+  &.portrait {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'mainImage mainImage mainImage mainImage secondImage secondImage secondImage .'
+    'mainImage mainImage mainImage mainImage thirdImage fourthImage . .'
+    'mainImage mainImage mainImage mainImage . . . .'
+    'description description description description description description description description';
+  }
   `}
 `;
 
