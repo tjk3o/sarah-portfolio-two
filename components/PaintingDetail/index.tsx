@@ -27,7 +27,13 @@ export type paintingData = {
 
 const PaintingDetail = ({ paintingData }: { paintingData }) => (
   <DetailsContainer
-    className={Boolean(paintingData.landscape) ? 'landscape' : 'unset'}
+    className={
+      Boolean(paintingData.landscape)
+        ? 'landscape'
+        : Boolean(paintingData.portrait)
+        ? 'portrait'
+        : 'unset'
+    }
   >
     <MainImageContainer>
       <Image
@@ -43,7 +49,7 @@ const PaintingDetail = ({ paintingData }: { paintingData }) => (
       <Image
         src={paintingData.image_close_1}
         alt={`painting of ${paintingData.title}`}
-        layout={paintingData.portrait ? 'fill' : 'responsive'}
+        layout={'responsive'}
         width={700}
         height={700}
       />
@@ -52,7 +58,7 @@ const PaintingDetail = ({ paintingData }: { paintingData }) => (
       <Image
         src={paintingData.image_close_2}
         alt={`painting of ${paintingData.title}`}
-        layout={paintingData.portrait ? 'fill' : 'responsive'}
+        layout={'responsive'}
         width={700}
         height={700}
       />
@@ -61,7 +67,7 @@ const PaintingDetail = ({ paintingData }: { paintingData }) => (
       <Image
         src={paintingData.image_close_3}
         alt={`painting of ${paintingData.title}`}
-        layout={paintingData.portrait ? 'fill' : 'responsive'}
+        layout={'responsive'}
         width={700}
         height={700}
       />
