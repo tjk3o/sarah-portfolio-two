@@ -3,6 +3,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  webpack5: true,
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
 
