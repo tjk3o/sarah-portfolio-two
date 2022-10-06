@@ -8,6 +8,7 @@ image_close_3: /images/while_clouds_gather/while_clouds_gather_close_3.jpg
 category: 'land ocean'
 description: 'oil on canvas • 900x450mm • <a href="mailto:enquiries@sarahanneartist.com" target="_blank" rel="noopener noreferrer">enquire</a>'
 landscape: true
+portrait: false
 main_image_width: 3743
 main_image_height: 1842
 ---
