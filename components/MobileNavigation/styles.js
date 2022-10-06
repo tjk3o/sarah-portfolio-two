@@ -2,16 +2,17 @@ import styled from 'styled-components';
 import { mediaQueries, colors } from '../../theme';
 
 export const NavigationOptions = styled.nav`
-  padding: 15px 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   background-color: ${colors.black};
-  height: 280px;
+  height: 0px;
   width: 100%;
-  margin-top: -280px;
-  transition: margin-top 200ms ease-in-out;
-  ${({ open }) => open && 'margin-top: 0px;'};
+  transition: height 200ms ease-in-out;
+  overflow: hidden;
+
+  ${({ open }) => open && 'height: 270px;'};
 `;
 
 export const NavLink = styled.a`
@@ -26,6 +27,11 @@ export const NavLink = styled.a`
   width: 100%;
   text-align: center;
   line-height: 40px;
+
+  &:first-child {
+    margin-top: 15px;
+  }
+
   ${({ open }) => open && `color: ${colors.white};`};
 `;
 
@@ -43,11 +49,15 @@ export const NavButton = styled.button`
   }
 
   ${mediaQueries.tabletLandscapeUp`
-  display: none;
-`}
+    display: none;
+  `}
 `;
 
 export const StyledNavAnchor = styled.a`
   width: 100%;
   text-align: center;
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
 `;
