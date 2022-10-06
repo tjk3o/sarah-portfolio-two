@@ -4,3 +4,6 @@ package-lock.json
 
 # Next.js build output
 .next/
+
+# Image files
+public/images/
