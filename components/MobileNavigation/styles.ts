@@ -1,7 +1,24 @@
 import styled from 'styled-components';
 import { mediaQueries, colors } from '../../theme';
 
-export const NavigationOptions = styled.nav`
+interface NavigationOptionsProps {
+  open: Boolean;
+}
+
+export interface NavLinkProps {
+  open: Boolean;
+}
+
+interface StyledNavAnchorProps {
+  href: string;
+  target: string;
+  rel: string;
+  alt: string;
+  'aria-label': string;
+
+}
+
+export const NavigationOptions = styled.nav<NavigationOptionsProps>`
   padding: 0;
   display: flex;
   justify-content: center;
@@ -12,10 +29,11 @@ export const NavigationOptions = styled.nav`
   transition: height 200ms ease-in-out;
   overflow: hidden;
 
-  ${({ open }) => open && 'height: 270px;'};
+  ${({ open }) => open && 'height: 310px;'};
 `;
 
-export const NavLink = styled.a`
+
+export const NavLink = styled.div<NavLinkProps>`
   text-decoration: none;
   background-color: ${colors.black};
   color: ${colors.grey};
@@ -23,7 +41,6 @@ export const NavLink = styled.a`
   font-size: 16px;
   font-weight: 100;
   height: 40px;
-  margin: 0 5px;
   width: 100%;
   text-align: center;
   line-height: 40px;
@@ -49,12 +66,12 @@ export const NavButton = styled.button`
     outline: grey;
   }
 
-  ${mediaQueries.tabletLandscapeUp`
+  @media (min-width: 960px) {
     display: none;
-  `}
+  }
 `;
 
-export const StyledNavAnchor = styled.a`
+export const StyledNavAnchor = styled.a<StyledNavAnchorProps>`
   width: 100%;
   height: 40px;
   text-align: center;

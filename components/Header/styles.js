@@ -16,7 +16,7 @@ export const HeaderText = styled.h1`
   }
 `;
 
-export const HeaderLink = styled.a`
+export const HeaderLink = styled.div`
   text-decoration: none;
   color: ${colors.black};
   transition: all 0.2s ease-out;

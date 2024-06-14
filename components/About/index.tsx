@@ -14,9 +14,14 @@ const About = () => (
       <Image
         src='/images/sarah/sarah_anne_portrait.jpg'
         alt={`picture of me painting`}
-        layout='fill'
-        objectFit='cover'
+        width={1146}
+        height={1575}
         priority
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover'
+        }}
       />
     </AboutMainImage>
     <AboutText>
@@ -60,8 +65,6 @@ const About = () => (
         <Image
           src='/images/sarah/signature.png'
           alt={`my signature`}
-          layout='responsive'
-          objectFit='cover'
           width={207}
           height={126}
           priority

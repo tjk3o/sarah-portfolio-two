@@ -15,16 +15,16 @@ const Navigation = ({ route }: { route: string }) => {
   return (
     <>
       <NavigationOptions open={menuStatus}>
-        <Link href='/about' passHref>
+        <Link href='/about' passHref style={{width: '100%'}}>
           <NavLink open={route === 'about'}>About</NavLink>
         </Link>
-        <Link href='/land' passHref>
+        <Link href='/land' passHref style={{width: '100%'}}>
           <NavLink open={route === 'land'}>Land</NavLink>
         </Link>
-        <Link href='/ocean' passHref>
+        <Link href='/ocean' passHref style={{width: '100%'}}>
           <NavLink open={route === 'ocean'}>Ocean</NavLink>
         </Link>
-        <Link href='/city' passHref>
+        <Link href='/city' passHref style={{width: '100%'}}>
           <NavLink open={route === 'city'}>City</NavLink>
         </Link>
         <StyledNavAnchor

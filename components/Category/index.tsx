@@ -21,11 +21,9 @@ export const Category = ({
     land: 'Land',
     city: 'City',
   };
-
-  paintingsData.sort(function (a: { date: string }, b: { date: string }) {
-    const firstDate = new Date(b.date);
-    const secondDate = new Date(a.date);
-    return firstDate.getTime() - secondDate.getTime();
+  
+  paintingsData.sort((a, b) => {
+    return a.index - b.index;
   });
 
   return (
@@ -43,10 +41,8 @@ export const Category = ({
                 priority={i === 0}
                 src={painting.image}
                 alt={`painting of ${painting.title}`}
-                layout='responsive'
                 width={600}
                 height={600}
-                objectFit='cover'
                 quality={25}
               />
             </CategoryLink>

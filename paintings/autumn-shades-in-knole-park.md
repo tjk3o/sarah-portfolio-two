@@ -9,6 +9,6 @@ category: 'land'
 description: 'oil on canvas • 900x900mm • <a href="mailto:enquiries@sarahanneartist.com" target="_blank" rel="noopener noreferrer">enquire</a>'
 landscape: false
 portrait: false
-main_image_width: 3000
-main_image_height: 3000
+main_image_width: 2740
+main_image_height: 2740
 ---

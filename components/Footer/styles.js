@@ -18,7 +18,7 @@ export const FooterContainer = styled.footer`
   `}
 `;
 
-export const Dot = styled.span`
+export const Dot = styled.div`
   display: none;
   ${mediaQueries.tabletPortraitUp`
     display: inline;

@@ -9,23 +9,23 @@ const Navigation = ({ route }: { route: string }) => (
   <>
     <NavigationContainer>
       <Link href='/about'>
-        <NavLink open={route === 'about'} href='/about'>
+        <NavLink open={route === 'about'}>
           {' '}
           About me
         </NavLink>
       </Link>
       <Link href='/land'>
-        <NavLink open={route === 'land'} href='/land'>
+        <NavLink open={route === 'land'}>
           Land
         </NavLink>
       </Link>
       <Link href='/city'>
-        <NavLink open={route === 'city'} href='/city'>
+        <NavLink open={route === 'city'}>
           City
         </NavLink>
       </Link>
       <Link href='/ocean'>
-        <NavLink open={route === 'ocean'} href='/ocean'>
+        <NavLink open={route === 'ocean'}>
           Ocean
         </NavLink>
       </Link>
