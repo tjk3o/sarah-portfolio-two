@@ -1,5 +1,14 @@
 import styled from 'styled-components';
+import { NavLinkProps } from '../MobileNavigation/styles'
 import { mediaQueries, colors } from '../../theme';
+
+interface NavAnchorProps {
+  href: string;
+  target: string;
+  rel: string;
+  alt: string;
+  'aria-label': string;
+}
 
 export const NavigationContainer = styled.nav`
   display: none;
@@ -13,7 +22,7 @@ export const NavigationContainer = styled.nav`
   `}
 `;
 
-export const NavLink = styled.a`
+export const NavLink = styled.div<NavLinkProps>`
   height: 26px;
   margin: 0;
   text-align: center;
@@ -34,7 +43,7 @@ export const NavLink = styled.a`
   ${({ open }) => open && `color: ${colors.black} !important;`}
 `;
 
-export const NavAnchor = styled.a`
+export const NavAnchor = styled.a<NavAnchorProps>`
   &:hover {
     color: ${colors.grey};
     transform: scale(1.02);

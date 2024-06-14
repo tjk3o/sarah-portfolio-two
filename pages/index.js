@@ -1,4 +1,4 @@
-import { getAllPaintingsData } from '../lib/paintings';
+import { getPaintingsByCategory } from '../lib/paintings';
 import Layout from '../components/Layout';
 import Category from '../components/Category';
 import Head from 'next/head';
@@ -8,7 +8,7 @@ export default function HomePage({ paintingsData }) {
     <Layout>
       <Head>
         <title>Sarah Anne Art | Home</title>
-        <meta name='description' content='A list of all my paintings'></meta>
+        <meta name='description' content='A list of all my favourite paintings'></meta>
       </Head>
       <Category paintingsData={paintingsData} />
     </Layout>
@@ -16,7 +16,7 @@ export default function HomePage({ paintingsData }) {
 }
 
 export async function getStaticProps() {
-  const paintingsData = getAllPaintingsData();
+  const paintingsData = getPaintingsByCategory('favourites');
 
   return {
     props: {

@@ -36,7 +36,8 @@ export const CategoryContainer = styled.main`
   `}
 `;
 
-export const CategoryLink = styled.a`
+export const CategoryLink = styled.div`
+  display: flex;
   position: relative;
   width: 100%;
   height: 100%;
@@ -44,4 +45,8 @@ export const CategoryLink = styled.a`
 
 export const CategoryImage = styled(Image)`
   background: ${colors.grey};
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 `;
