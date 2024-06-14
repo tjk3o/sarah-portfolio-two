@@ -2,7 +2,7 @@
 title: "Autumn in motion"
 date: "2023-03-24"
 index: 0
-image: /images/autumn-in-motion/autumn-in-motion.jpg
+image: /images/autumn_in_motion/autumn_in_motion.jpg
 image_close_1: /images/autumn_in_motion/autumn_in_motion_close_1.jpg
 image_close_2: /images/autumn_in_motion/autumn_in_motion_close_2.jpg
 image_close_3: /images/autumn_in_motion/autumn_in_motion_close_3.jpg
