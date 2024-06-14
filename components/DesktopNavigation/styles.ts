@@ -17,9 +17,9 @@ export const NavigationContainer = styled.nav`
   width: 630px;
   margin-bottom: 20px;
 
-  ${mediaQueries.tabletLandscapeUp`
+  @media (min-width: 960px) {
     display: flex;
-  `}
+  }
 `;
 
 export const NavLink = styled.div<NavLinkProps>`
