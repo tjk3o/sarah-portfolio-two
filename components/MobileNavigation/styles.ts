@@ -66,9 +66,9 @@ export const NavButton = styled.button`
     outline: grey;
   }
 
-  ${mediaQueries.tabletLandscapeUp`
+  @media (min-width: 960px) {
     display: none;
-  `}
+  }
 `;
 
 export const StyledNavAnchor = styled.a<StyledNavAnchorProps>`
